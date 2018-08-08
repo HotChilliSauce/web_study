@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>html 기초2</title>
+    <style>
+        body,h1,p{margin: 0;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .iceCream{
+            width:100%;
+            margin:300px 0;
+        }
+        .iceCream th{
+            background:gray; 
+        }
+    
+        /*여기까지 아이스크림*/
+        
+        /*복습테이블 클래스*/
+        .hotCream{
+            width:500px;
+            height:500px;
+            margin: 0 auto;
+            text-align:center;
+             border:1px solid black;
+            border-right: 0;
+            border-bottom:0;
+            margin-top: 150px;
+        }
+        .hotCream th{
+            background: yellow;
+            height: 50px;
+        }
+        .hotCream th, .hotCream td{
+            border-right: 1px solid #000;
+            border-bottom: 1px solid #000;
+        }
+        .hotCream tfoot td{
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!--타이틀 및 엔티티코드연습-->
+    <h1>html 기초수업</h1>
+    <p>나는 <b>잠이온다</b></p>
+    <p>눕고싶고 <em>이불이</em> <strong>정말</strong>그립다</p>
+    <p>오늘의 날짜 <del>2018.07.25</del></p>
+    <p>내일의 날짜 <ins>2018.07.26</ins></p>
+    <p>나는 &nbsp;&nbsp;&nbsp; &ldquo;주말&rdquo;이 &#40;빨리 &#40; 왔으면 좋겠다</p>
+    <!--타이틀 및 엔티티코드연습-->
+    
+    <!--목록태그연습-->
+    <ul>
+        <li>
+            <a href="http://www.naver.com" target="_blank">메뉴1</a>
+        </li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+        <li>메뉴5</li>
+    </ul>
+    
+    <ol>        
+        <li>
+            <a href="http://www.daum.net" target="_blank">메뉴2</a>
+        </li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+        <li>메뉴5</li>
+    </ol>
+    
+    <dl>
+        <dt>
+            <a href="http://www.tjoeun.co.kr" target="_blank">더조은강의실</a>
+        </dt>
+        <dd>501</dd>
+        <dd>502</dd>
+        <dd>503</dd>
+        <dd>504</dd>
+    </dl>
+    <!--목록태그연습-->
+    
+<hr />
+    <!--테이블태그연습-->
+    <table width="100%" border="1" cellpadding="10" cellspacing="0">
+        <colgroup>
+            <col bgcolor="yellow"/>
+        </colgroup>
+        <thead>
+        <tr bgcolor="gray">
+            <th colspan="4"> 더조은 강의실</th>
+            </tr>
+        </thead>
+        <tbody style="text-align:center">
+            
+           <!--더조은 강의실
+            <tr>
+                <th colspan="4" bgcolor="#5d5d5d">더조은 강의실</th>
+            </tr>-->
+            
+            <tr>
+                <td bgcolor="yellow">디자인</td>
+                <td bgcolor="#38cdda">캐드</td>
+                <td bgcolor="#66c844">UI</td>
+                <td bgcolor="#d73764">UX</td>
+            </tr>
+            <tr>
+                <td bgcolor="yellow">502호</td>
+                <td>503호</td>
+                <td colspan="2">504호</td>
+            </tr>
+            <tr>
+                <td bgcolor="yellow">17명</td>
+                <td>10명</td>
+                <td>5명</td>
+                <td rowspan="2">담당자 없이 자유롭게</td>
+            </tr>
+            <tr>
+                <td bgcolor="yellow">담당강사 : 김혜진</td>
+                <td>담당강사 : 김거북이</td>
+                <td>담당강사 : 뽀로로</td>
+            </tr>
+            <tr>
+                <td bgcolor="yellow" colspan="4">디자인 수업은 17명으로 진행되며 6월 18일부터 12월 11일까지 수업 예정입니다.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+<!--표2-->
+
+
+    
+
+    
+<!--테이블연습2-->
+
+<table width="100%" border="1" cellpadding="15" cellspacing="0">
+    <colgroup>
+        <col bgcolor="yellow">
+        <col bgcolor="#eb732a">
+    </colgroup>
+        
+    <!--테이블헤더-->
+    
+    <thead>
+    <tr>
+        <th colspan="4" bgcolor="gray">더조은강의실</th>
+    </tr>
+    </thead>
+    
+    <!--테이블바디-->
+    
+    <tbody align="center">
+        <tr>
+            <td>캐드</td>
+            <td>디자인</td>
+            <td>아트</td>
+            <td>회계</td>
+        </tr>
+        <tr>
+            <td>502</td>
+            <td>503</td>
+            <td colspan="2">504</td>
+        </tr>
+        <tr>
+            <td>5명</td>
+            <td>17명</td>
+            <td>10명</td>
+            <td rowspan="2">인원수 상관없이 <br>자유롭게 </td>
+        </tr>
+        <tr>
+            <td>홍길동</td>
+            <td>둘리</td>
+            <td>김혜진</td>
+            
+            <!--테이블바디-->
+        
+       <tfoot>
+            </tr>
+            <tr>
+                <td colspan="4">디자인 수업은 17명으로 진행되며 6월 18일부터 12월 11일까지 수업예정</td>
+            </tr>
+        </tfoot>
+    
+    </tbody>
+    </table>
+
+<!--테이블연습끝-->
+
+
+
+<!--div-->
+<div>안녕하세요</div>
+<div>반갑습니다</div>
+
+
+
+<!--20180730 html 테이블 복습-->
+<table cellspacing="0" class="hotCream">
+    <colgroup>
+        <col/>
+        <col/>
+        <col/>
+        <col/>
+    </colgroup>
+    <!--테이블헤더-->
+    <thead>
+        <tr>
+            <th>이름</th>
+            <th>나이</th>
+            <th>성별</th>
+            <th>비고</th>
+        </tr>
+    </thead>
+        <!--테이블헤더-->
+    <tfoot>
+        <tr>
+            <td colspan="4">이상 오유경.</td>
+        </tr>
+    </tfoot>
+    <!--테이블푸터-->
+    
+    <!--테이블바디-->
+    <tbody>
+        <tr>
+            <td>오유경</td>
+            <td>100</td>
+            <td>여자</td>
+            <td rowspan="4">없음</td>
+        </tr>
+        <tr>
+            <td>오유경</td>
+            <td>100</td>
+            <td>여자</td>
+        </tr>
+        <tr>
+            <td>오유경</td>
+            <td>100</td>
+            <td>여자</td>
+        </tr>
+        <tr>
+            <td>오유경</td>
+            <td>100</td>
+            <td>여자</td>
+        </tr>
+    </tbody>
+    <!--테이블바디-->
+    
+    
+</table>
+<!--20180730 html 테이블 복습-->
+
+
+
+
+
+
+
+<!--테이블연습3-->
+
+<table class="iceCream">
+    
+    <!--테이블헤더-->
+    
+    <thead>
+    <tr>
+        <th colspan="4" >더조은강의실</th>
+    </tr>
+    </thead>
+    
+    <!--테이블바디-->
+    
+    <tbody align="center">
+        <tr>
+            <td>캐드</td>
+            <td>디자인</td>
+            <td>아트</td>
+            <td>회계</td>
+        </tr>
+        <tr>
+            <td>502</td>
+            <td>503</td>
+            <td colspan="2">504</td>
+        </tr>
+        <tr>
+            <td>5명</td>
+            <td>17명</td>
+            <td>10명</td>
+            <td rowspan="2">인원수 상관없이 <br>자유롭게 </td>
+        </tr>
+        <tr>
+            <td>홍길동</td>
+            <td>둘리</td>
+            <td>김혜진</td>
+            
+            <!--테이블바디-->
+        
+       <tfoot>
+            </tr>
+            <tr>
+                <td colspan="4">디자인 수업은 17명으로 진행되며 6월 18일부터 12월 11일까지 수업예정</td>
+            </tr>
+        </tfoot>
+    
+    </tbody>
+    </table>
+
+<!--테이블연습끝-->
+
+</body>
+</html>
