@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/*메인슬라이더*/
+
+.mainSlider{
+    height: 375px;
+    margin-bottom: 30px;
+}
+.mainSlider img{
+    width: 100%;
+}
+
+/*mainRow1 동영상*/
+.mainRow1{
+    margin-bottom: 30px;
+}
+.mainVideo{}
+
+/*mainRow2 뉴스*/
+.mainRow2{}
+.mainRow2 div{}
+.row2Tit h2{}
+.row2Btn{}
+.row2Btn li{}
+.row2Btn li a{}
+
+.row2Con{
+    
+}
+.row2Con img{
+    width: 318px;
+    height: 183px;
+}
+.row2Con p{
+    font-size: 16px;
+    font-weight: 500;
+}
+.row2Con .moreBtn{
+    width: 105px;
+    height: 37px;
+    background: url(../imges/main/more_box.jpg) no-repeat;
+    background-size: 100%;
+    font-size: 12px;
+}
+.row2Con .moreBtn a{
+    display: block;
+    text-align: center;
+}
+

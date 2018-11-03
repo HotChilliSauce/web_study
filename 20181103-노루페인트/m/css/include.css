@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/*헤더시작*/
+#header{
+}
+#header .headerTop{
+    height: 75px;
+    background: url(../imges/common/logo_bg.png);
+    position: relative;
+}
+#header h1{
+    width: 112px;
+    height: 43px;
+    background: url(../imges/common/logo.png) no-repeat;
+    background-size: 100%;
+    text-indent: -9999px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -22px;
+    margin-left: -56px;
+}
+#header h1 a{
+    height: 100%;
+    display: block;
+}
+
+.pannel{
+    width: 30px;
+    height: 24px;
+    background: url(../imges/common/pannel.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -12px;
+    text-indent: -9999px;
+}
+.pannel a{
+    display: block;
+}
